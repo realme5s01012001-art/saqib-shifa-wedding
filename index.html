@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Mohd Saqib & Shifa Bano</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .invitation {
+            background: white;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .names {
+            margin: 30px 0;
+            font-size: 1.8em;
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 20px auto;
+        }
+        
+        .event {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            text-align: left;
+        }
+        
+        .event-title {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .event-detail {
+            font-size: 1em;
+            color: #555;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .location-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+        
+        .location-link:hover {
+            background: #764ba2;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+        
+        .footer p {
+            margin: 5px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .names {
+                font-size: 1.3em;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <div class="header">
+            <h1>You Are Cordially Invited</h1>
+            <p>To Celebrate the Wedding of</p>
+        </div>
+        
+        <div class="content">
+            <div class="names">
+                Mohd Saqib
+                <div class="divider"></div>
+                & Shifa Bano
+            </div>
+            
+            <div class="event">
+                <div class="event-title">💒 Wedding Ceremony</div>
+                <div class="event-detail">
+                    <strong>Date:</strong> Saturday, 25th October 2026
+                </div>
+                <div class="event-detail">
+                    <strong>Location:</strong> <a href="https://maps.app.goo.gl/pv6n6ZHoTNTLK42b7" class="location-link" target="_blank">📍 View Location</a>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="event-title">🎉 Walima Reception</div>
+                <div class="event-detail">
+                    <strong>Date:</strong> Monday, 27th October 2026
+                </div>
+                <div class="event-detail">
+                    <strong>Location:</strong> <a href="https://maps.app.goo.gl/pv6n6ZHoTNTLK42b7" class="location-link" target="_blank">📍 View Location</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Your Presence Is Requested and Will Be Treasured</p>
+            <p style="margin-top: 15px; font-size: 0.85em;">Created with 💕</p>
+        </div>
+    </div>
+</body>
+</html>
